@@ -12,7 +12,7 @@ const CustomizedInput = (props: Props) => {
     <TextField
       margin="normal"
       InputLabelProps={{
-        style: { color: "#00796B" }, // Sky blue label color
+        style: { color: "#00796B" }, 
       }}
       name={props.name}
       label={props.label}
@@ -22,8 +22,8 @@ const CustomizedInput = (props: Props) => {
           width: "400px",
           borderRadius: 10,
           fontSize: 20,
-          color: "#00796B", // Sky blue text color
-          backgroundColor: "#E0F7FA", // Light sky blue background
+          color: "#00796B", 
+          backgroundColor: "#E0F7FA",
         },
       }}
     />
