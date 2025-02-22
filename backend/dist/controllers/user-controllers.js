@@ -2,9 +2,11 @@ import User from "../models/User.js";
 import { hash, compare } from "bcrypt";
 import { createToken } from "../utils/token-manager.js";
 import { COOKIE_NAME } from "../utils/constants.js";
+
+    //get all users
 export const getAllUsers = async (req, res, next) => {
     try {
-        //get all users
+    
         const users = await User.find();
         return res.status(200).json({ message: "OK", users });
     }
@@ -13,9 +15,11 @@ export const getAllUsers = async (req, res, next) => {
         return res.status(200).json({ message: "ERROR", cause: error.message });
     }
 };
+
+ //user signup
 export const userSignup = async (req, res, next) => {
     try {
-        //user signup
+       
         const { name, email, password } = req.body;
         const existingUser = await User.findOne({ email });
         if (existingUser)
@@ -23,6 +27,8 @@ export const userSignup = async (req, res, next) => {
         const hashedPassword = await hash(password, 10);
         const user = new User({ name, email, password: hashedPassword });
         await user.save();
+
+        
         // create token and store cookie
         res.clearCookie(COOKIE_NAME, {
             httpOnly: true,
@@ -87,9 +93,11 @@ export const userLogin = async (req, res, next) => {
         return res.status(200).json({ message: "ERROR", cause: error.message });
     }
 };
+
+//user token check
 export const verifyUser = async (req, res, next) => {
     try {
-        //user token check
+        
         const user = await User.findById(res.locals.jwtData.id);
         if (!user) {
             return res.status(401).send("User not registered OR Token malfunctioned");
@@ -106,9 +114,12 @@ export const verifyUser = async (req, res, next) => {
         return res.status(200).json({ message: "ERROR", cause: error.message });
     }
 };
+
+
+  //user token check
 export const userLogout = async (req, res, next) => {
     try {
-        //user token check
+      
         const user = await User.findById(res.locals.jwtData.id);
         if (!user) {
             return res.status(401).send("User not registered OR Token malfunctioned");
