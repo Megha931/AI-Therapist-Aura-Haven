@@ -30,11 +30,10 @@ const Signup = () => {
     if (auth?.user) {
       navigate("/chat");
     }
-  }, [auth?.user, navigate]); // Updated dependencies to avoid unnecessary re-renders
-
+  }, [auth?.user, navigate]); 
   return (
     <Box width={"100%"} height={"100vh"} display="flex" flex={1}>
-      {/* Left Image Section */}
+   
       <Box padding={8} mt={8} display={{ md: "flex", sm: "none", xs: "none" }}>
         <img src="airobot.png" alt="Robot" style={{ width: "400px" }} />
       </Box>
