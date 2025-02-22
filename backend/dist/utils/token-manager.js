@@ -1,8 +1,10 @@
 import jwt from "jsonwebtoken";
 import { COOKIE_NAME } from "./constants.js";
 import dotenv from "dotenv";
-dotenv.config(); // ✅ Load environment variables
-// ✅ Ensure JWT_SECRET is properly assigned and checked
+
+
+dotenv.config();
+
 const JWT_SECRET = process.env.JWT_SECRET || "";
 if (!JWT_SECRET) {
     throw new Error("JWT_SECRET is not defined in environment variables.");
@@ -16,19 +18,22 @@ if (!JWT_SECRET) {
  */
 export const createToken = (id, email, expiresIn = "1h") => {
     const payload = { id, email };
-    // ✅ Ensure `expiresIn` is correctly typed
+   
     let formattedExpiresIn = typeof expiresIn === "number" ? expiresIn : expiresIn.toString();
     const signOptions = {
-        expiresIn: formattedExpiresIn, // ✅ Fixed TypeScript error
+        expiresIn: formattedExpiresIn, 
     };
     return jwt.sign(payload, JWT_SECRET, signOptions);
 };
+
+
+
 /**
  * Middleware to verify JWT token from cookies.
  */
 export const verifyToken = async (req, res, next) => {
     try {
-        const token = req.signedCookies?.[COOKIE_NAME]; // ✅ Safe optional chaining
+        const token = req.signedCookies?.[COOKIE_NAME]; 
         if (!token || token.trim() === "") {
             return res.status(401).json({ message: "Token Not Received" });
         }
@@ -36,7 +41,7 @@ export const verifyToken = async (req, res, next) => {
             if (err) {
                 return res.status(401).json({ message: "Token Expired or Invalid" });
             }
-            res.locals.jwtData = decoded; // ✅ Store decoded data for further use
+            res.locals.jwtData = decoded; 
             return next();
         });
     }
