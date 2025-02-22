@@ -10,7 +10,7 @@ import {
   sendChatRequest,
 } from "../helpers/api-communicator";
 import toast from "react-hot-toast";
-import bg from "../assets/bg.jpg"; // Import background image
+import bg from "../assets/bg.jpg"; 
 import Footer from "../components/footer/Footer";
 
 type Message = {
@@ -245,7 +245,7 @@ const Chat = () => {
         </Box>
       </Box>
 
-      {/* Footer Component Placed Correctly */}
+      
       <Footer />
     </>
   );
