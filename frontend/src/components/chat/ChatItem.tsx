@@ -42,7 +42,7 @@ const ChatItem = ({
       sx={{
         display: "flex",
         p: 2,
-        bgcolor: "#E0F7FA", // Sky blue
+        bgcolor: "#E0F7FA", 
         gap: 2,
         borderRadius: 2,
         my: 1,
@@ -77,7 +77,7 @@ const ChatItem = ({
       sx={{
         display: "flex",
         p: 2,
-        bgcolor: "#ECEFF1", // Light grey
+        bgcolor: "#ECEFF1", 
         gap: 2,
         borderRadius: 2,
       }}
