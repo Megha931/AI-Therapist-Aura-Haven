@@ -3,7 +3,7 @@ import { connectToDatabase } from "./db/connection.js";
 
 const PORT = process.env.PORT || 5000;
 
-// Database connection and server startup
+
 connectToDatabase()
   .then(() => {
     app.listen(PORT, () =>
@@ -12,5 +12,5 @@ connectToDatabase()
   })
   .catch((err) => {
     console.error("Database Connection Failed ❌", err);
-    process.exit(1); // ✅ Exit process if DB connection fails
+    process.exit(1); 
   });
