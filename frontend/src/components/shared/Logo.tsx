@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import Typography from "@mui/material/Typography";
-import lotusFlower from "../../assets/lotus-flower.png"; // Import the new image
+import lotusFlower from "../../assets/lotus-flower.png"; 
 
 const Logo = () => {
   return (
@@ -14,12 +14,12 @@ const Logo = () => {
     >
       <Link to={"/"}>
         <img
-          src={lotusFlower} // Use the new imported image
+          src={lotusFlower} 
           alt="Lotus Flower"
           width="50px"
           height="50px"
           style={{
-            filter: "unset", // Ensures no unwanted effects
+            filter: "unset", 
           }}
         />
       </Link>{" "}
