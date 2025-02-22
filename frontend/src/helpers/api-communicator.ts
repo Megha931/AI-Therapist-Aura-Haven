@@ -31,7 +31,7 @@ export const sendChatRequest = async (message: string) => {
     throw new Error("Unable to send chat");
 
   }
-  return res.data; // Ensure backend response format matches expected structure
+  return res.data;
 };
 
 export const getUserChats = async () => {
