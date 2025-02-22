@@ -11,10 +11,10 @@ const Home = () => {
   return (
     <Box
       width={"100%"}
-      minHeight={"100vh"} // ✅ Changed from height: 100vh
+      minHeight={"100vh"} 
       display={"flex"}
       flexDirection={"column"}
-      justifyContent={"space-between"} // ✅ Pushes footer to bottom
+      justifyContent={"space-between"} 
       sx={{
         backgroundImage: `url(${AI_background})`,
         backgroundSize: "cover",
@@ -28,19 +28,19 @@ const Home = () => {
           left: 0,
           width: "100%",
           height: "100%",
-          backgroundColor: "rgba(255, 255, 255, 0.1)", // Light fade effect
+          backgroundColor: "rgba(255, 255, 255, 0.1)", 
         },
       }}
     >
       {/* Main Content Section */}
-      <Box sx={{ paddingTop: "64px", flex: 1 }}> {/* ✅ Allows content to expand */}
+      <Box sx={{ paddingTop: "64px", flex: 1 }}> 
         <Box
           sx={{
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
             justifyContent: "center",
-            height: "100%", // ✅ Ensures centering
+            height: "100%", 
             zIndex: 1,
           }}
         >
@@ -50,7 +50,7 @@ const Home = () => {
         </Box>
       </Box>
 
-      {/* ✅ Footer Always at Bottom */}
+     
       <Footer />
     </Box>
   );
