@@ -29,11 +29,10 @@ const Login = () => {
     if (auth?.user) {
       navigate("/chat");
     }
-  }, [auth?.user, navigate]); // Updated dependency to prevent unnecessary re-renders
-
+  }, [auth?.user, navigate]); 
   return (
     <Box width={"100%"} height={"100vh"} display="flex" flex={1}>
-      {/* Left Image Section */}
+     
       <Box padding={8} mt={8} display={{ md: "flex", sm: "none", xs: "none" }}>
         <img src="airobot.png" alt="Robot" style={{ width: "400px" }} />
       </Box>
@@ -71,12 +70,12 @@ const Login = () => {
                 px: 2,
                 py: 1,
                 mt: 2,
-                width: "100%", // Full width for mobile responsiveness
+                width: "100%", 
                 borderRadius: 2,
-                bgcolor: "#B39DDB !important", // Ensuring lavender color
+                bgcolor: "#B39DDB !important", 
                 color: "white !important",
                 ":hover": {
-                  bgcolor: "#D1C4E9 !important", // Lighter lavender on hover
+                  bgcolor: "#D1C4E9 !important", 
                   color: "black !important",
                 },
               }}
