@@ -15,25 +15,25 @@ const NavigationLink = (props: Props) => {
       className="nav-link"
       to={props.to}
       style={{
-        background: props.bg, // Background color (could be semi-transparent)
-        color: props.textColor, // Text color
-        padding: "12px 20px", // Padding for a larger clickable area
-        borderRadius: "10px", // Smooth rounded corners
-        textDecoration: "none", // No underline
-        fontWeight: "600", // Bold text for better visibility
-        marginRight: "15px", // Space between the links
-        display: "inline-block", // Display as an inline-block for alignment
-        transition: "all 0.3s ease", // Smooth transition for hover effect
+        background: props.bg, 
+        color: props.textColor, 
+        padding: "12px 20px", 
+        borderRadius: "10px", 
+        textDecoration: "none", 
+        fontWeight: "600",
+        marginRight: "15px", 
+        display: "inline-block", 
+        transition: "all 0.3s ease", 
       }}
       onMouseEnter={(e) => {
-        // Change background and text color on hover
-        e.currentTarget.style.backgroundColor = "#00796B"; // Change background color
-        e.currentTarget.style.color = "#FFFFFF"; // Change text color to white
+       
+        e.currentTarget.style.backgroundColor = "#00796B"; 
+        e.currentTarget.style.color = "#FFFFFF";
       }}
       onMouseLeave={(e) => {
-        // Reset to original colors when mouse leaves
-        e.currentTarget.style.backgroundColor = props.bg; // Reset background
-        e.currentTarget.style.color = props.textColor; // Reset text color
+      
+        e.currentTarget.style.backgroundColor = props.bg; 
+        e.currentTarget.style.color = props.textColor; 
       }}
     >
       {props.text}
