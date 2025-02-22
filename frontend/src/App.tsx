@@ -15,7 +15,7 @@ function App() {
     <main style={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}>
       <Header />
       
-      <div style={{ flex: 1 }}> {/* ✅ Pushes footer to the bottom */}
+      <div style={{ flex: 1 }}> 
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
