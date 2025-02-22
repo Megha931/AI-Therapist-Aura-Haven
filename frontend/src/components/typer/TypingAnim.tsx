@@ -17,10 +17,10 @@ const TypingAnim = () => {
       ]}
       speed={55}
       style={{
-        fontSize: "50px", // ✅ Classy, professional size
+        fontSize: "50px", 
         color: "white",
         display: "inline-block",
-        textShadow: "2px 2px 15px rgba(0, 0, 0, 0.7)", // ✅ Subtle, refined glow
+        textShadow: "2px 2px 15px rgba(0, 0, 0, 0.7)", 
         fontWeight: "500",
         textAlign: "center",
         paddingTop: "250px",
