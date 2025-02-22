@@ -5,12 +5,12 @@ const Footer = () => {
     <footer
       style={{
         width: "100%",
-        height: "50px", // ✅ Fixed height instead of minHeight: 100vh
-        backgroundColor: "rgba(0, 0, 0, 0.3)", // ✅ Transparent effect
+        height: "50px", 
+        backgroundColor: "rgba(0, 0, 0, 0.3)",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        position: "relative", // ✅ Ensures it stays at the bottom
+        position: "relative", 
         zIndex: 1000,
       }}
     >
