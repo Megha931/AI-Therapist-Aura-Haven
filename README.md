@@ -1,39 +1,58 @@
-# AI-Therapist: Aura Haven
+# 🧬 AI-Therapist: Aura Haven
+Aura Haven is an AI-powered mental wellness chatbot designed to provide emotional support and promote a positive mindset. Inspired by conversational models like Gemini AI, it engages in meaningful, empathetic dialogue by analyzing user sentiments and delivering personalized responses.
 
+## Overview
+Aura Haven serves as a digital companion, helping users reflect on their emotions through daily conversations. The application is built with modern technologies, ensuring a secure, scalable, and user-friendly experience.
 
-Description
+## Key Features
+Sentiment Analysis — Understands and interprets user emotions
 
-Aura Haven is an AI-powered chatbot designed to provide emotional support by analyzing user sentiments. Inspired by GPT models, it engages in meaningful conversations, offering uplifting and encouraging responses, much like a supportive friend. The chatbot helps users reflect on their day and fosters a positive mindset through thoughtful interactions.
+AI-Powered Conversations — Provides context-aware, encouraging responses
+
+Secure Authentication — JWT-based login and registration system
+
+Modern Interface — Built using Material UI for a sleek and responsive layout
+
+AI Integration — Utilizes Gemini AI API for intelligent interaction
+
+Scalable Backend — Structured with Express.js and MongoDB for stability and performance
 
 ## Technologies Used
+Frontend: React (Vite)
 
-Frontend: React(Vite)
 Backend: Express.js
+
 Styling: Material UI
-Security: JWT Authentication
+
+Authentication: JWT
+
 Database: MongoDB
-Programming Language: TypeScript
-AI Integration: Gemini AI API 
 
-## Features
+Language: TypeScript
 
-Sentiment analysis to understand user emotions
-Personalized and uplifting responses
-Secure user authentication with JWT
-Modern UI design with Material UI
-Scalable backend with Express.js and MongoDB
+AI Integration: Gemini AI API
 
 ## Setup Instructions
+To set up and run the project locally:
 
-Clone the repository:
-Install dependencies for the frontend and backend:
+1. Clone the Repository
+bash
+Copy
+Edit
+git clone https://github.com/Megha931/AI-Therapist-Aura-Haven.git
+cd AI-Therapist-Aura-Haven
+2. Install Dependencies
+bash
+Copy
+Edit
 npm install
+3. Configure Environment Variables
+Create a .env file and add required credentials (API keys, database URI, JWT secret, etc.).
 
-Set up environment variables for API keys and database configuration.
-Start the development server:
+4. Run the Development Server
+bash
+Copy
+Edit
 npm run dev
+The app will be available at http://localhost:5173 (or your configured port).
 
-Access the application in your browser and start interacting with Aura Haven.
-
-##  Contribution
-Feel free to contribute by submitting issues or pull requests to enhance the chatbot’s functionality.
