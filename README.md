@@ -35,25 +35,22 @@ AI Integration: Gemini AI API
 ## Setup Instructions
 To set up and run the project locally:
 
-1. Clone the Repository
-bash
-Copy
-Edit
-git clone https://github.com/Megha931/AI-Therapist-Aura-Haven.git
+Clone the Repository
+
 cd AI-Therapist-Aura-Haven
-2. Install Dependencies
-bash
-Copy
-Edit
+
+Install Dependencies
+
 npm install
-3. Configure Environment Variables
+
+Configure Environment Variables
+
 Create a .env file and add required credentials (API keys, database URI, JWT secret, etc.).
 
-4. Run the Development Server
-bash
-Copy
-Edit
+Run the Development Server
+
 npm run dev
+
 The app will be available at http://localhost:5173 (or your configured port).
 
 
