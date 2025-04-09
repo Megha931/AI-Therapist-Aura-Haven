@@ -56,3 +56,13 @@ Edit
 npm run dev
 The app will be available at http://localhost:5173 (or your configured port).
 
+
+![image](https://github.com/user-attachments/assets/6aaa8f1e-271f-41f1-83fd-61b9c7356452)
+
+![image](https://github.com/user-attachments/assets/665f40da-bccf-44d5-aa45-cd7c5ef4a5d6)
+
+![image](https://github.com/user-attachments/assets/27f1efe4-f41a-4a80-b573-caabd8320a87)
+
+
+
+
